@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMC - PREDICTOR</title>
+    <!-- INTEGRAMOS BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/styleIMC.css">
+</head>
+<body><br>
+    <div class="container row">
+        <div class="col-lg-2">
+                <img src="images/logo.png" alt="UES-FMO" class="img img-fluid logoUES">
+            </div>
+            <div class="col-lg-10"><br>
+                <h3>UNIVERSIDAD DE EL SALVADOR</h3>
+                <h3>FACULTAD MULTIDISCIPLINARIA ORIENTAL</h3>
+                <h3>DEPARTAMENTO DE INGENIERÍA Y ARQUITECTURA</h3>
+            </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">IMC+</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="historia.html">Historia</a>
+            <a class="nav-item nav-link" href="clinica.html">Clínica</a>
+            <a class="nav-item nav-link" href="doctores.html">Doctores</a>
+            <a class="nav-item nav-link" href="pacientes.html">Pacientes</a>
+            <a class="nav-item nav-link" href="analisis.html">Analísis clínico</a>
+            <a class="nav-item nav-link disabled" href="imc.html" tabindex="-1" aria-disabled="true">Ejecutar IMC+</a>
+            <a class="nav-item nav-link" href="desarrolladores.html">Desarrolladores</a>
+            <a class="nav-item nav-link" href="contactos.html">Contactos</a>
+        </div>
+        </div>
+    </nav>
+    <div class=""><br>
+      <div class="card ">
+        <div class="card-header text-center"><strong>Índice de masa corporal(IMC)</strong></div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="text-justify">Esta es una razón matemática que asocia la masa y la talla de un individuo, ideada por
+              el estadístico belga Adolphe Quetelet; por lo que también se conoce como índice de Quetelet.</p>
+            <p class="text-justify">El IMC también puede calcularse a partir de tablas o gráficas que muestran el IMC en función de la masa
+              y la altura usando líneas de contorno para distintas categorías. ​El IMC es un criterio ampliamente aceptado
+              pero no es exacto. Clasifica a las personas en infrapeso, peso normal, sobrepeso y obesidad basandose
+              exclusivamente en la masa del individuo y su altura. No tendría en cuenta la edad, el sexo, el porcentaje
+              de grasa corporal o la masa muscular. Incluso la categorización aún hoy es objeto de debate sobre dónde se
+              deberían colocar esos límites. Se acepta comúnmente los siguientes: infrapeso por debajo de 18.5 kg/m2,
+              peso normal: 18.5 a 25, sobrepeso: 25 a 30, obeso: más de 30. ​El IMC por debajo de 20 y sobre 25 ha sido
+              asociado con menor probabilidad de mortalidad, incrementando el riesgo entre 20 - 25. [1]</p>
+            <footer class="blockquote-footer">[1] Malcolm Kendrick (12 de abril de 2015).
+            <cite title="Source Title">Why being 'overweight' means you live longer: The way scientists twist the facts</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTEGRAMOS BOOTSTRAP JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- INCLUIMOS LIBRERÍA PARA UTILIZACIÓN DE I.A, CON @TENSORFLOW -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="tensorJS/basicModelTF.js"></script>
+
+</body>
+</html>
